@@ -11,3 +11,4 @@ NoSQL (Not Only SQL) databases are a type of database management system that div
 Examples of popular NoSQL databases include MongoDB, Cassandra, Redis, and Neo4j.
 
 In this repository, we will explore different NoSQL databases and their use cases in depth. Stay tuned for more updates!
+thank you
