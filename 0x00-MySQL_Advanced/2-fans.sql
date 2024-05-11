@@ -3,4 +3,4 @@
 SELECT country_origin, SUM(fans) AS nb_fans
 FROM metal_bands
 GROUP BY country_origin
-ORDER BY total_fans DESC;
+ORDER BY nb_fans DESC;
