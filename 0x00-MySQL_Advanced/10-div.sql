@@ -1,6 +1,7 @@
 -- a script to create a function
 
 DROP FUNCTION IF EXISTS SafeDiv;
+DELIMITER //
 CREATE FUNCTION SafeDiv (a INT, b INT)
 RETURNS FLOAT DETERMINISTIC
 BEGIN
@@ -10,3 +11,4 @@ BEGIN
     END IF;
     RETURN result;
 END;
+DELIMITER ;
