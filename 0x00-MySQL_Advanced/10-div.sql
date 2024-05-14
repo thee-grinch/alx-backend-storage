@@ -1,9 +1,12 @@
---  a SQL script that creates a function SafeDiv that divides (and returns) the first by the second number or returns 0 if the second number is equal to 0.
-CREATE FUNCTION SafeDiv (@a INT, @b INT)
-RETURNS FLOAT AS
+-- a script to create a function
+
+DROP FUNCTION IF EXISTS SafeDiv;
+CREATE FUNCTION SafeDiv (a INT, b INT)
+RETURNS FLOAT DETERMINISTIC
 BEGIN
-DECLARE @return_value FLOAT;
-IF (@b = 0) SET @return_value = 0;
-ELSE SET @return_value = @a / @b;
-RETURN @return_value;
+    DECLARE result FLOAT DEFAULT 0;
+    IF (b != 0) THEN
+        SET result = a / b;
+    END IF;
+    RETURN result;
 END;
