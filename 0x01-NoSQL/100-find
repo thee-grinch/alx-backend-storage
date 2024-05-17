@@ -1,0 +1,3 @@
+// lists all mongo documents starting with the given prefix
+
+db.school.find({name: /^Holberton/ })
