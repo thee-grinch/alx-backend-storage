@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""a function that provides some stats about Nginx logs stored in MongoDB"""
+"""a function that provides some stats about Nginx logs stored in MongoDB stats"""
 from pymongo import MongoClient
 
 
